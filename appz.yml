@@ -26,7 +26,7 @@ properties:
   SONAR_ADMIN_PASSWORD: ecloudsys
   SONAR_USER_USERNAME: eclouduser
   SONAR_USER_PASSWORD: userpass1
-  SONAR_JDBC_URL: jdbc:postgresql://postgres-master-12-2/sonarqube
+  SONAR_JDBC_URL: jdbc:postgresql://postgres-master-12-2:5432/sonarqube
   SONAR_JDBC_USERNAME: sonaruser
   SONAR_JDBC_PASSWORD: mypass
   CREATE_DEFAULT_USERS: TRUE
