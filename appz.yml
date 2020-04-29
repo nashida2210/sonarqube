@@ -31,4 +31,4 @@ properties:
   SONAR_JDBC_USERNAME: postgres
   SONAR_JDBC_PASSWORD: mypass
   CREATE_DEFAULT_USERS: TRUE
-  revision : 05
+  revision : 06
