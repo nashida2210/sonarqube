@@ -30,4 +30,4 @@ properties:
   SONAR_JDBC_USERNAME: sonaruser
   SONAR_JDBC_PASSWORD: mypass
   CREATE_DEFAULT_USERS: TRUE
-  revision : 07
+  revision : 08
