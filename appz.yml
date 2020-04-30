@@ -30,4 +30,4 @@ properties:
   SONAR_JDBC_USERNAME: sonaruser2
   SONAR_JDBC_PASSWORD: sonaruser1
   CREATE_DEFAULT_USERS: TRUE
-  revision : 10
+  revision : 11
