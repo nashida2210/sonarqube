@@ -21,6 +21,7 @@ monitor:
   notify: appzops@cloudbourne.co      
     
 properties:
+  SONAR_WEB_CONTEXT: /sonarqube
   sonar.forceAuthentication: true
   SONAR_ADMIN_USERNAME: ecloudsys
   SONAR_ADMIN_PASSWORD: ecloudsys
