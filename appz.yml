@@ -23,12 +23,14 @@ monitor:
 properties:
   SONAR_WEB_CONTEXT: /sonarqube
   sonar.forceAuthentication: true
-  SONAR_ADMIN_USERNAME: ecloudsys
-  SONAR_ADMIN_PASSWORD: ecloudsys
+  SONAR_ADMIN_USERNAME: ecloudadmin
+  SONAR_ADMIN_PASSWORD:
+    vault: SONAR_ADMIN_PASSWORD
   SONAR_USER_USERNAME: eclouduser
-  SONAR_USER_PASSWORD: userpass1
-  SONAR_JDBC_URL: jdbc:postgresql://postgres-master-12-2:5432/sonar?schema=sonarschema
-  SONAR_JDBC_USERNAME: sonaruser2
+  SONAR_USER_PASSWORD: 
+    vault: SONAR_USER_PASSWORD
+  SONAR_JDBC_URL: jdbc:postgresql://postgres-master-12-2:5432/sonarnew?schema=sonarschema
+  SONAR_JDBC_USERNAME: sonaruser
   SONAR_JDBC_PASSWORD: 
     vault: SONAR_JDBC_PASSWORD
   CREATE_DEFAULT_USERS: TRUE
