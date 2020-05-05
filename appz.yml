@@ -34,4 +34,4 @@ properties:
   SONAR_JDBC_PASSWORD: 
     vault: SONAR_JDBC_PASSWORD
   CREATE_DEFAULT_USERS: TRUE
-  revision : 16
+  revision : 17
