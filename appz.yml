@@ -30,9 +30,9 @@ properties:
   SONAR_USER_USERNAME: eclouduser
   SONAR_USER_PASSWORD: 
     vault: SONAR_USER_PASSWORD
-  SONAR_JDBC_URL: jdbc:postgresql://postgres-master-12-2:5432/sonaruser?schema=sonarschema
+  SONAR_JDBC_URL: jdbc:postgresql://postgres-master-12-2:5432/sonar?schema=sonarschema
   SONAR_JDBC_USERNAME: sonaruser
   SONAR_JDBC_PASSWORD: 
     vault: SONAR_JDBC_PASSWORD
   CREATE_DEFAULT_USERS: TRUE
-  revision : 24
+  revision : 25
