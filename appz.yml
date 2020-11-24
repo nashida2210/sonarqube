@@ -1,6 +1,6 @@
 app:
-  name: SonarQubeDemo
-  code: SonarQubeDemo 
+  name: Sonarqube
+  code: Sonarqube 
   notify: appzdev@cloudbourne.co
     
 build:
@@ -13,7 +13,7 @@ build:
     
 deploy:
   context: alpha/DEV
-  type:  sonarqube8
+  type:  sonarqube
   replicas: 1
   port:
   - 9000
