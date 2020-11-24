@@ -9,7 +9,7 @@ build:
   build_file: none
   output_files: output/*.zip
   image_template: sonarqube_azl-8.2
-  image_name: alpha/sonarqubedemo
+  image_name: alpha/sonarqube
     
 deploy:
   context: alpha/DEV
@@ -30,7 +30,7 @@ properties:
   SONAR_USER_USERNAME: eclouduser
   SONAR_USER_PASSWORD: 
     vault: SONAR_USER_PASSWORD
-  SONAR_JDBC_URL: jdbc:postgresql://postgres-sonarqube-12-2:5432/sonar?schema=sonarschema
+  SONAR_JDBC_URL: jdbc:postgresql://postgres-sonarqube-12-2-0:5432/sonar?schema=sonarschema
   SONAR_JDBC_USERNAME: sonaruser
   SONAR_JDBC_PASSWORD: 
     vault: SONAR_JDBC_PASSWORD
