@@ -21,7 +21,7 @@ volumes:
   - claim: sonarqube-data
     mount: /appz/data
     name: data
-    size: 50Gi
+    size: 5Gi
     
 monitor:
   notify: nmeeran@ecloudcontrol.com      
