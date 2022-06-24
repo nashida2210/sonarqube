@@ -1,7 +1,7 @@
 app:
   name: SonarQube
   code: SonarQube 
-  notify: appzdev@cloudbourne.co
+  notify: nmeeran@ecloudcontrol.com
     
 build:
   version: 8.2
@@ -12,14 +12,14 @@ build:
   image_name: ea-shareservices/sonarqube
     
 deploy:
-  context: EA-SharedServices/DEV
+  context: nashida2210/DEV
   type:  sonarqube8
   replicas: 1
   port:
   - 9000
     
 monitor:
-  notify: appzops@cloudbourne.co      
+  notify: nmeeran@ecloudcontrol.com      
     
 properties:
   SONAR_WEB_CONTEXT: /sonarqube
@@ -30,8 +30,8 @@ properties:
   SONAR_USER_USERNAME: eclouduser
   SONAR_USER_PASSWORD: 
     vault: SONAR_USER_PASSWORD
-  SONAR_JDBC_URL: jdbc:postgresql://postgres-master-12-2:5432/sonarnew?schema=sonarschema
-  SONAR_JDBC_USERNAME: sonaruser
+  SONAR_JDBC_URL: jdbc:postgresql://postgres-sonarqube-13-3:5432/postgresonar
+  SONAR_JDBC_USERNAME: postgresonar
   SONAR_JDBC_PASSWORD: 
     vault: SONAR_JDBC_PASSWORD
   CREATE_DEFAULT_USERS: TRUE
