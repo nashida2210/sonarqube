@@ -9,14 +9,19 @@ build:
   build_file: none
   output_files: output/*.zip
   image_template: sonarqube_azl-8.2
-  image_name: ea-shareservices/sonarqube
-    
+  
 deploy:
   context: nashida2210/DEV
-  type:  sonarqube8
+  type:  statefulset
   replicas: 1
   port:
   - 9000
+
+volumes:
+  - claim: sonarqube-data
+    mount: /appz/data
+    name: data
+    size: 50Gi
     
 monitor:
   notify: nmeeran@ecloudcontrol.com      
