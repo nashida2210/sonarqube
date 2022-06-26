@@ -27,7 +27,6 @@ monitor:
   notify: nmeeran@ecloudcontrol.com      
     
 properties:
-  SONAR_WEB_CONTEXT: /sonarqube
   sonar.forceAuthentication: true
   SONAR_ADMIN_USERNAME: ecloudadmin
   SONAR_ADMIN_PASSWORD:
